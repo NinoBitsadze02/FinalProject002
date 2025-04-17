@@ -15,12 +15,19 @@
 
 }
 
+.main-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+}
 
 
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 0 2rem;
+    gap: 40rem;
+    margin: 
 
 
 }
@@ -54,16 +61,6 @@ h1 {
 
 }
 
-.button-blog {
-    background-color: var(--color_1);
-    display: inline-block;
-    line-height: 3rem;
-    text-align: center;
-    color: var(--color_3);
-    width: 6rem;
-    height:3rem;
-    border-radius: 0.8rem;
-}
 
 .hero-content {
     position: relative;
@@ -73,6 +70,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    
     
 
 
@@ -89,12 +87,15 @@ h2 {
     flex-wrap: wrap;
     width: 40rem;
     text-align: center;
+    line-height: 5rem;
 }
+
 
 .hero-content p {
     font-size: 1.2rem;
     width: 38rem;
     text-align: center;
+    line-height: 2rem;
 }
 
 .flight-bar {
@@ -112,6 +113,7 @@ h2 {
     height: 5rem;
     width: 20rem;
     border-radius: 1.5rem 1.5rem 0 0;
+    font-weight: 500;
     
 }
 
@@ -124,3 +126,107 @@ h2 {
 .icon {
     width: 1.5rem;
 }
+
+.flight-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 59rem;
+    height: 12rem;
+    border-radius: 0 3rem 3rem 3rem;
+    background: var(--color_1);
+    padding: 0 3rem;
+
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    height: 7rem;
+    border: 1px solid #CECECE;
+    border-radius: 1.5rem;
+    padding: 0 1.5rem;
+    
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 24rem;
+    height: 7rem;
+    border: 1px solid #CECECE;
+    border-radius: 1.5rem;
+    padding: 0 1.5rem;
+
+}
+
+.search-button {
+    background-color: var(--color_3);
+    height: 6rem;
+    width: 6rem;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+ 
+.one, .three {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.one :nth-child(1), .three :nth-child(1), .four :nth-child(1), .six :nth-child(1) {
+    font-size: 1rem;
+    color: var(--color_4);
+
+}
+
+
+.one :nth-child(2), .three :nth-child(2), .four :nth-child(2), .six :nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.leave, .return {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.leave img {
+    transform: rotate(45deg);
+    width:1.7rem;
+    height: 1.7rem;
+}
+
+.return img {
+    transform: rotate(225deg);
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.two, .five {
+    width: 2rem;
+    height: 2rem;
+    border: 1px dashed #CECECE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two img, .five img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
