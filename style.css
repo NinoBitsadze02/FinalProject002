@@ -5,18 +5,26 @@
     --color_4: #7C7C7C;
     --color_5: #3e87f573;
 }
+* {
+    outline: 1px solid red;
+  }
 
 .container {
+    max-width: 1500px;
     font-family: 'Poppins', sans-serif;
     padding: 3rem;
     background-color: #f3f1f1;
     background-image: url('imgs/mountains.jpg');
     background-size: contain;
-    background-size: 100rem 50rem;
+    background-size: 120rem 60rem;
     background-repeat: no-repeat;
     
 
 
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .main-1 {
@@ -128,9 +136,23 @@ h2 {
     
 }
 
-.icon {
-    width: 1.5rem;
+.airplane-icon {
+    color: var(--color_3);
+    margin: 0.3rem;
+    transform: rotate(-45deg);
 }
+
+.fa-hotel {
+    color: var(--color_3);
+    margin: 0.3rem;
+
+}
+
+.fa-calendar-days {
+    color: var(--color_4);
+}
+ 
+
 
 .flight-bottom {
     display: flex;
@@ -178,9 +200,10 @@ h2 {
     align-items: center;
 }
 
-.search-button img {
-    width: 2.5rem;
-    height: 2.5rem;
+.fa-magnifying-glass {
+    color: white;
+    font-size: 3rem;
+    
 }
  
 .one, .three {
@@ -205,20 +228,16 @@ h2 {
 .leave, .return {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 2rem;
 }
 
-.leave img {
-    transform: rotate(45deg);
-    width:1.7rem;
-    height: 1.7rem;
+.gray-plane {
+    color: var(--color_4);
 }
 
-.return img {
-    transform: rotate(225deg);
-    width: 1.7rem;
-    height: 1.7rem;
-}
+
+
+
 
 .two, .five {
     width: 2rem;
@@ -230,10 +249,7 @@ h2 {
     justify-content: center;
 }
 
-.two img, .five img {
-    width: 1.5rem;
-    height: 1.5rem;
-}
+
 
 .offers-top img {
     display: flex;
@@ -567,17 +583,30 @@ h2 {
     left: 9.5rem;
  }
 
- .stars-canyon img, .stars-fuji img, .stars-nepal img, .stars-machu img {
-    width: 1.2rem;
-    height: 1.2rem;
+ .canyon-star, .fuji-star, .nepal-star, .machu-star {
+    color: yellow;
+    font-size: 0.9rem;
+    margin: 0.2rem;
+ }
+
+ .fa-location-dot {
+    color: rgb(228, 92, 92);
+    
  }
 
 
  .pin {
     display: flex;
+    align-items: center;
     font-size: 0.9rem;
     color: var(--color_4);
     font-weight: 500;
+    gap: 0.4rem
+ }
+
+ .fa-star {
+    color: yellow;
+    font-size: 0.7rem;
  }
 
  .grand-canyon-bottom, .fuji-bottom, .nepal-bottom, .machu-bottom {
@@ -687,9 +716,13 @@ h2 {
 }
 
 .arrows {
-    width: 5rem;
-    height:2rem;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    color: var(--color_3)
 }
+
+
 
 .reviews {
     display:flex;
@@ -708,8 +741,12 @@ footer img {
     
 }
 
-footer {
+.footer-image {
     position: relative;
+}
+
+footer {
+    
     display: flex;
     flex-direction: column;
     
@@ -722,16 +759,16 @@ footer {
     position: absolute;
     color: white;
     font-size: 2rem;
-    bottom: 23rem;
-    left: 21rem;
+    bottom: 13rem;
+    left: 20rem;
     width: 35rem;
     line-height: 3rem;
 }
 
 .footer-image p {
     position: absolute;
-    bottom: 16rem;
-    left: 34rem;
+    bottom: 7rem;
+    left: 32rem;
     background-color: white;
     color: var(--color_3);
     width: 10rem;
@@ -742,6 +779,21 @@ footer {
     justify-content: center;
     align-items: center;
 
+}
+
+.footer-image:hover p {
+    color: white;
+    background-color: var(--color_3)
+
+}
+
+.list {
+    color: black;
+    
+}
+
+.list:hover {
+    color: var(--color_3);
 }
 
 .footer-bottom {
@@ -885,3 +937,7 @@ footer {
     box-shadow: 0px 4px 12px #f178b7ab;
 }
 
+
+@media (max-width: 768px) {
+    
+}
